@@ -2,13 +2,13 @@
 
 A Convolutional Neural Network (CNN) implemented entirely from scratch using NumPy and trained on the CIFAR-10 image classification dataset.
 
-The goal of this project is to understand the mathematical foundations and internal mechanics of convolutional neural networks by implementing the core components without relying on deep learning frameworks such as PyTorch or TensorFlow.
+The project explores the mathematical foundations and internal mechanics of CNNs by implementing the core components without relying on deep learning frameworks such as PyTorch or TensorFlow.
 
 ## Project Overview
 
-This project implements a CNN capable of classifying images into 10 different categories from the CIFAR-10 dataset.
+This project implements a CNN to classify images into 10 categories from the CIFAR-10 dataset.
 
-The implementation covers the complete training pipeline, including forward propagation, loss computation, backpropagation, and parameter updates using mini-batch Stochastic Gradient Descent (SGD).
+The complete training pipeline includes forward propagation, loss computation, manual backpropagation, and parameter updates using mini-batch Stochastic Gradient Descent (SGD).
 
 ## Architecture
 
@@ -27,7 +27,7 @@ The model consists of the following layers:
 ## Implemented Components
 
 - Convolution operation using NumPy
-- Efficient convolution forward pass using im2col
+- Efficient convolution forward pass using `im2col`
 - Convolution backward propagation
 - ReLU activation and its gradient
 - Max pooling and backward propagation
@@ -66,24 +66,25 @@ Training configuration:
 - Validation samples: 5,000
 - Batch size: 32
 - Learning rate: 0.01
-- Epochs: 10
+- Maximum epochs: 50
 
 ## Results
 
-Training and validation results will be added after the training run completes.
+The model was evaluated on the CIFAR-10 test set after training.
 
 | Metric | Result |
 |---|---:|
-| Training Accuracy | TBD |
-| Validation Accuracy | TBD |
-| Test Accuracy | TBD |
+| Training Accuracy (Epoch 50) | 71.34% |
+| Validation Accuracy (Epoch 50) | 65.36% |
+| Best Validation Accuracy | 65.38% |
+| Test Accuracy | 65.51% |
 
 ## What I Learned
 
 - How convolution operations extract spatial features from images
 - How gradients propagate through convolutional and pooling layers
 - How to implement backpropagation manually
-- How im2col transforms convolution into matrix multiplication
+- How `im2col` transforms convolution into matrix multiplication
 - How neural network parameters are updated through gradient descent
 - How to construct an end-to-end deep learning training pipeline
 
@@ -110,7 +111,7 @@ Install dependencies:
 pip install numpy matplotlib
 ```
 
-Run the notebook:
+Launch Jupyter Notebook:
 
 ```bash
 jupyter notebook
