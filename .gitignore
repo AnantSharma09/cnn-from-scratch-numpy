@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset
+cifar-10-batches-py/
+cifar-10-python.tar.gz
+
+# Model weights
+*.npz
+
+# OS
+.DS_Store
